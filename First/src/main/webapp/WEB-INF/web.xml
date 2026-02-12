@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+<servlet>
+       <servlet-name>ConfigServlet</servlet-name>
+       <servlet-class>com.mohan.ConfigServlet</servlet-class>
+       <init-param>
+           <param-name>Name</param-name>
+           <param-value>Mohan</param-value>
+       </init-param>
+ <init-param>
+           <param-name>RollNo</param-name>
+           <param-value>5M5</param-value>
+       </init-param>
+        <init-param>
+           <param-name>Section</param-name>
+           <param-value>CSE D</param-value>
+       </init-param>
+   </servlet>
+   <servlet-mapping>
+<servlet-name>ConfigServlet</servlet-name>
+<url-pattern>/ConfigServlet</url-pattern>
+</servlet-mapping> 
+ 
+   <servlet>
+ <servlet-name>Demo</servlet-name>
+ <servlet-class>com.mohan.Demo</servlet-class>
+ </servlet>
+<servlet-mapping>
+<servlet-name>Demo</servlet-name>
+<url-pattern>/Demo</url-pattern>
+</servlet-mapping> 
+ 
+ <servlet>
+ <servlet-name>HeaderServlet</servlet-name>
+ <servlet-class>com.mohan.HeaderServlet</servlet-class>
+ </servlet>
+<servlet-mapping>
+<servlet-name>HeaderServlet</servlet-name>
+<url-pattern>/HeaderServlet</url-pattern>
+</servlet-mapping> 
+ 
+  <servlet>
+ <servlet-name>Time</servlet-name>
+ <servlet-class>com.mohan.Time</servlet-class>
+ </servlet>
+<servlet-mapping>
+<servlet-name>Time</servlet-name>
+<url-pattern>/Time</url-pattern>
+</servlet-mapping> 
+ 
+ 
+ <servlet>
+ <servlet-name>PreExisting</servlet-name>
+ <servlet-class>com.mohan.PreExisting</servlet-class>
+ </servlet>
+<servlet-mapping>
+<servlet-name>PreExisting</servlet-name>
+<url-pattern>/PreExisting</url-pattern>
+</servlet-mapping> 
+
+<servlet>
+    <servlet-name>SessionInfoServlet</servlet-name>
+    <servlet-class>com.mohan.SessionInfoServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>SessionInfoServlet</servlet-name>
+    <url-pattern>/SessionInfoServlet</url-pattern>
+</servlet-mapping>
+
+<servlet>
+    <servlet-name>VisitCountServlet</servlet-name>
+    <servlet-class>com.mohan.VisitCountServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>VisitCountServlet</servlet-name>
+    <url-pattern>/VisitCountServlet</url-pattern>
+</servlet-mapping>
+
+<servlet>
+    <servlet-name>UserValidationServlet</servlet-name>
+    <servlet-class>com.mohan.UserValidationServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>UserValidationServlet</servlet-name>
+    <url-pattern>/UserValidationServlet</url-pattern>
+</servlet-mapping>
+<servlet>
+    <servlet-name>WelcomeServlet</servlet-name>
+    <servlet-class>com.mohan.WelcomeServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>WelcomeServlet</servlet-name>
+    <url-pattern>/WelcomeServlet</url-pattern>
+</servlet-mapping>
+
+
+<servlet>
+    <servlet-name>LoginServlet</servlet-name>
+    <servlet-class>com.mohan.LoginServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>LoginServlet</servlet-name>
+    <url-pattern>/LoginServlet</url-pattern>
+</servlet-mapping>
+<servlet>
+    <servlet-name>WelcomeServlet2</servlet-name>
+    <servlet-class>com.mohan.WelcomeServlet2</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>WelcomeServlet2</servlet-name>
+    <url-pattern>/WelcomeServlet2</url-pattern>
+</servlet-mapping>
+
+
+
+
+
+</web-app>

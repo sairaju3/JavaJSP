@@ -1,0 +1,27 @@
+-----------------Employee Management System-----------------------
+Using Only Collection (List)
+
+1.Employee Details
+	-Employee Id
+		-Formate - 6 Characters
+				 - First 3 characters are alphabets 
+				 	- First 2 characters of Name and Last Characters of Name
+				 - Last 3 characters are Digits
+				 
+				 Ex :- Raju -- Id - Raj303
+				 
+	-Employee Name
+	-Employee age
+	-Employee emailId
+	-Employee MobileNumber
+	-Employee type("Developer","Tester","Hr")
+	-Employee Designation
+	-Employee salary
+	-Employee years of Experience
+
+2.Create a System thet can manage the Employees
+	-Add an Employee , Remove an Employee,
+	-Update Employee Details
+	 Details that can be Updated - Moble number, EmailId,
+	 Salary , Designation , Year Of Experience
+	-Display all Employee Details

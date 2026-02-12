@@ -1,0 +1,43 @@
+Select 
+
+1.Alphabets
+	1.A
+	2.B
+	3.c
+	4.D
+	.
+	.
+2.Triangle
+	1.Right Angle
+	2.Mirrored Right Angle
+	3.Reversed Right Angle
+	4.Reversed Mirrored Right Angle
+	5.Exit
+3.Pyramids
+	1.Star Pyramid
+	2.Reversed Pyramid
+	3.Palindromic Pyramid
+		1.Number
+		2.Alphabets
+	4.Mirror Pyramid
+		1.Number
+		2.Alphabet
+	5.Exit
+4.Diamonds
+	1.Star Diamond
+	2.Palindromic Diamond
+		1.Number
+		2.Alphabet
+	3.Mirror Diamond
+		1.Number
+		2,Alphabet
+	4.Exit
+5.SandGlass
+6.Hollow Patterns
+	1.Hollow Pyramid
+	2.Hollow Pyramid
+	3.Hollow SandGlass
+	4.Exit
+	
+7.Exit
+

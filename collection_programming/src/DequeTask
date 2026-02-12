@@ -1,0 +1,97 @@
+
+mini -project: Task schedule system(using Dque)
+
+A company wants to develop a task scheduler System to manage and execute different tasks based on their priority level.
+Each task represent a job that must be performed in order of importance.
+
+There are two types of tasks:
+
+1.Normal Tasks - handled in the usual sequence 
+	(added to the end of the queue).
+2.High-priority Tasks - handled immediately
+	(added to the front of the queue).
+
+The must Write a java program that performs the following operations:
+
+1.add Normal Task
+	Input : Task name and description.
+	add the task at the end of the Deque.
+	
+2.Add High - priority Tasks	
+	Input : Task name and description.
+	add the task at teh front of the Deque.
+
+3.Execute Next Tasks	
+	Remove and display the task from the front
+	(describes executing that task).
+	if no tasks are available , display a suitable message
+	
+4.Show all Pending Tasks
+	Display all task currently in the Deque
+	(from front to end)
+	
+	Task Format:
+		[Task#ID] TaskName - Description(pripority)
+		Example : [Task#1] backup Database - Nightly backup process(High)
+		
+5.Exit
+	Stop the program execution.
+	
+----------------------------------------------------------------------------------------------------
+
+Project Structure & Class Design
+1.Task Class
+	Fields:
+			int taskId
+			String taskName
+			String taskDescription
+			String priority
+			
+Constructor: Initializes all the above fields.
+
+-taskId should auto-increment for each new task
+
+
+Methods:
+
+toString()-> return a string representation of the task in a clear format.
+
+Example Output: 
+	-[Task#1] Database backup 
+	
+	
+2.TaskSchedule Class
+
+Field : Deque<Task> taskQueue
+
+Methods:
+	-addNormalTask(String name,String description)
+	adds a normal task to the end of the Deque Using addLast().
+	
+	-addHighPriorityTask(String name,String description)
+	Adds a high-pripority task to the front of the Deque.
+	using addFirst().
+	
+	-executeNaxtTask()
+	Remove and display the task from the front of the Deque using removeFirst().
+	If no tasks are available,display;
+	"No tasks available to execute."
+	
+	-showAllTasks()
+	display all tasks currently in the Deque (from front to end ).
+	If no tasks are pending,display:
+	"No pending tasks!"
+	
+Note: 
+The Deque must be encapsulation inside the TaskSchedule class
+
+use addFirst(), addLast(), and removeFirst() for task management.
+
+3.TaskScheduleApp (main class)
+
+Contains a menu-driven programn that lets the choose operation(1-5).
+
+Use a Scanner object to task user input .
+
+call the respective method from the TaskSchedule class.
+
